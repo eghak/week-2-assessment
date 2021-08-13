@@ -1,58 +1,47 @@
-
 //////////////////PROBLEM 1////////////////////
-/*
-  Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. 
-  The function should return the sum of the two parameters.
-*/
+/* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-function sum (num1, num2) {
-  return num1 + num2
-}
+const faveColors = ['red', 'green', 'black']
 
+const colorCopy = faveColors.slice(0,3)
+
+console.log(colorCopy)
 
 //////////////////PROBLEM 2////////////////////
-/*
-  Create a function called 'greaterThanFive' that takes in a single parameter called 'number'. 
-  Check to see if 'number' is greater than 5.
-  If it is, return a true boolean. 
-  If it's not, return a false boolean.
-*/
+/* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-function greaterThanFive (number) {
- if (number > 5) {
-   return true
- } else {
-   return false
- }
-}
+colorCopy.push(`yellow`)
+
+console.log(colorCopy)
 
 //////////////////PROBLEM 3////////////////////
 /*
-  Create a function called 'findZWords' that takes in one parameter, 'word'. 
-  Your function should check to see if the name begins with the letter "Z"
-  If the name does begin with Z, return the string: 'the name begins with Z'. 
-  If the name does not begin with Z, return the string: 'the name does not begin with Z'.
+  Using an array method, create a new array called 'middleNums' from the 
+  numbers array that will capture only the middle numbers (2, 3, 4).
 */
 
-function findZWords (word) {
-  if (word.startsWith(`z`)) {
-    return `the name begins with Z`
-  } else {
-    return `the name does not begins with Z`
-  }
-}
+const numbers = [1, 2, 3, 4, 5]
 
-findZWords(`zorro`)
+const middleNums = numbers.splice(1,3)
+
+console.log(middleNums)
+
+
+
 
 //////////////////PROBLEM 4////////////////////
-/*
-  Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
-  Have the function take the two parameters and return a string that says 
-  "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
+/* 
+  Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
+  which will be an array of numbers. 
+  Inside of the bigOrSmall function, create a new array called 'answers'. 
+  Then, loop over the passed in arr parameter, and check to see if the number in the
+  array is GREATER than 100. 
+  If it is, push 'big' as a string to the answers array. 
+  If the number is LESS than or EQUAL to 100, push 'small' as a string 
+  to the answers array. 
+  Return the answers array inside of the function.
 */
 
-function iLove (name, love) {
-  return `${name} loves ${love}`
+function bigOrSmall (arr) {
+  let answers = 
 }
-
-iLove (`Egha`, `his family`)
